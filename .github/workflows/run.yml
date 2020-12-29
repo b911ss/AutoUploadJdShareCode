@@ -65,7 +65,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京东农场互助码3上传"
-        if: env.MyFruit1
+        if: env.MyFruit3
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -74,7 +74,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京东农场互助码4上传"
-        if: env.MyFruit1
+        if: env.MyFruit4
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -83,7 +83,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京东农场互助码5上传"
-        if: env.MyFruit1
+        if: env.MyFruit5
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -110,7 +110,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "种豆得豆互助码3上传"
-        if: env.MyBean2
+        if: env.MyBean3
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -119,7 +119,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "种豆得豆互助码4上传"
-        if: env.MyBean2
+        if: env.MyBean4
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -128,7 +128,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "种豆得豆互助码5上传"
-        if: env.MyBean2
+        if: env.MyBean5
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -155,7 +155,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "东东萌宠互助码3上传"
-        if: env.MyPet2
+        if: env.MyPet3
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -164,7 +164,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "东东萌宠互助码4上传"
-        if: env.MyPet2
+        if: env.MyPet4
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -173,7 +173,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "东东萌宠互助码5上传"
-        if: env.MyPet2
+        if: env.MyPet5
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -200,7 +200,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京喜工厂互助码3上传"
-        if: env.MyDreamFactory2
+        if: env.MyDreamFactory3
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -209,7 +209,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京喜工厂互助码4上传"
-        if: env.MyDreamFactory2
+        if: env.MyDreamFactory4
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -218,7 +218,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京喜工厂互助码5上传"
-        if: env.MyDreamFactory2
+        if: env.MyDreamFactory5
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -245,7 +245,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "东东工厂互助码3上传"
-        if: env.MyJdFactory2
+        if: env.MyJdFactory3
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -254,7 +254,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "东东工厂互助码4上传"
-        if: env.MyJdFactory2
+        if: env.MyJdFactory4
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -263,7 +263,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "东东工厂互助码5上传"
-        if: env.MyJdFactory2
+        if: env.MyJdFactory5
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -290,7 +290,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京东赚赚互助码3上传"
-        if: env.MyJdzz2
+        if: env.MyJdzz3
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -299,7 +299,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京东赚赚互助码4上传"
-        if: env.MyJdzz2
+        if: env.MyJdzz4
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -308,7 +308,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "京东赚赚互助码5上传"
-        if: env.MyJdzz2
+        if: env.MyJdzz5
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -335,7 +335,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "疯狂的Joy互助码3上传"
-        if: env.MyJoy2
+        if: env.MyJoy3
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -344,7 +344,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "疯狂的Joy互助码4上传"
-        if: env.MyJoy2
+        if: env.MyJoy4
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
@@ -353,7 +353,7 @@ jobs:
             echo "returnCode="$returnCode; \
           done;
       - name: "疯狂的Joy互助码5上传"
-        if: env.MyJoy2
+        if: env.MyJoy5
         run: |
           returnCode=0; \
           while (($returnCode != 400)); \
