@@ -11,15 +11,15 @@ jobs:
       TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
       PUSH_KEY: ${{ secrets.PUSH_KEY }}
       MyFruit1: ${{ secrets.MyFruit1 }}
-      MyFruit2: ${{ secrets.MyFruit1 }}
-      MyFruit3: ${{ secrets.MyFruit1 }}
-      MyFruit4: ${{ secrets.MyFruit1 }}
-      MyFruit5: ${{ secrets.MyFruit2 }}
-      MyBean1: ${{ secrets.MyBean2 }}
-      MyBean2: ${{ secrets.MyBean1 }}
-      MyBean3: ${{ secrets.MyBean1 }}
-      MyBean4: ${{ secrets.MyBean1 }}
-      MyBean5: ${{ secrets.MyBean1 }}
+      MyFruit2: ${{ secrets.MyFruit2 }}
+      MyFruit3: ${{ secrets.MyFruit3 }}
+      MyFruit4: ${{ secrets.MyFruit4 }}
+      MyFruit5: ${{ secrets.MyFruit5 }}
+      MyBean1: ${{ secrets.MyBean1 }}
+      MyBean2: ${{ secrets.MyBean2 }}
+      MyBean3: ${{ secrets.MyBean3 }}
+      MyBean4: ${{ secrets.MyBean4 }}
+      MyBean5: ${{ secrets.MyBean5 }}
       MyPet1: ${{ secrets.MyPet1 }}
       MyPet2: ${{ secrets.MyPet2 }}
       MyPet3: ${{ secrets.MyPet3 }}
