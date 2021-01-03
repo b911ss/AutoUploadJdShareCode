@@ -90,7 +90,16 @@ jobs:
           do \
             returnCode=`curl http://api.turinglabs.net/api/v1/jd/farm/create/${{ env.MyFruit5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
-          done; 
+          done;
+      - name: "京东农场互助码6上传"
+        if: env.MyFruit6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl http://api.turinglabs.net/api/v1/jd/farm/create/${{ env.MyFruit6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
       - name: "种豆得豆互助码1上传"
         if: env.MyBean1
         run: |
@@ -134,6 +143,15 @@ jobs:
           while (($returnCode != 400)); \
           do \
             returnCode=`curl http://api.turinglabs.net/api/v1/jd/bean/create/${{ env.MyBean5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "种豆得豆互助码6上传"
+        if: env.MyBean6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl http://api.turinglabs.net/api/v1/jd/bean/create/${{ env.MyBean6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
           done;
       - name: "东东萌宠互助码1上传"
@@ -181,6 +199,15 @@ jobs:
             returnCode=`curl http://api.turinglabs.net/api/v1/jd/pet/create/${{ env.MyPet5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
           done;
+      - name: "东东萌宠互助码6上传"
+        if: env.MyPet6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl http://api.turinglabs.net/api/v1/jd/pet/create/${{ env.MyPet6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
       - name: "京喜工厂互助码1上传"
         if: env.MyDreamFactory1
         run: |
@@ -224,6 +251,15 @@ jobs:
           while (($returnCode != 400)); \
           do \
             returnCode=`curl http://api.turinglabs.net/api/v1/jd/jxfactory/create/${{ env.MyDreamFactory5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "京喜工厂互助码6上传"
+        if: env.MyDreamFactory6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl http://api.turinglabs.net/api/v1/jd/jxfactory/create/${{ env.MyDreamFactory6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
           done;
       - name: "东东工厂互助码1上传"
@@ -271,6 +307,15 @@ jobs:
             returnCode=`curl http://api.turinglabs.net/api/v1/jd/ddfactory/create/${{ env.MyJdFactory5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
           done;
+      - name: "东东工厂互助码6上传"
+        if: env.MyJdFactory6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl http://api.turinglabs.net/api/v1/jd/ddfactory/create/${{ env.MyJdFactory6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
       - name: "京东赚赚互助码1上传"
         if: env.MyJdzz1
         run: |
@@ -316,6 +361,15 @@ jobs:
             returnCode=`curl https://code.chiang.fun/api/v1/jd/jdzz/create/${{ env.MyJdzz5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
           done;
+      - name: "京东赚赚互助码6上传"
+        if: env.MyJdzz6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdzz/create/${{ env.MyJdzz6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
       - name: "疯狂的Joy互助码1上传"
         if: env.MyJoy1
         run: |
@@ -359,6 +413,15 @@ jobs:
           while (($returnCode != 400)); \
           do \
             returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/${{ env.MyJoy5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "疯狂的Joy互助码6上传"
+        if: env.MyJoy6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/${{ env.MyJoy6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
           done;
       - name: Notify To Telegram
