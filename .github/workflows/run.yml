@@ -15,36 +15,43 @@ jobs:
       MyFruit3: ${{ secrets.MyFruit3 }}
       MyFruit4: ${{ secrets.MyFruit4 }}
       MyFruit5: ${{ secrets.MyFruit5 }}
+      MyFruit6: ${{ secrets.MyFruit6 }}
       MyBean1: ${{ secrets.MyBean1 }}
       MyBean2: ${{ secrets.MyBean2 }}
       MyBean3: ${{ secrets.MyBean3 }}
       MyBean4: ${{ secrets.MyBean4 }}
       MyBean5: ${{ secrets.MyBean5 }}
+      MyBean6: ${{ secrets.MyBean6 }}
       MyPet1: ${{ secrets.MyPet1 }}
       MyPet2: ${{ secrets.MyPet2 }}
       MyPet3: ${{ secrets.MyPet3 }}
       MyPet4: ${{ secrets.MyPet4 }}
       MyPet5: ${{ secrets.MyPet5 }}
+      MyPet6: ${{ secrets.MyPet6 }}
       MyDreamFactory1: ${{ secrets.MyDreamFactory1 }}
       MyDreamFactory2: ${{ secrets.MyDreamFactory2 }}
       MyDreamFactory3: ${{ secrets.MyDreamFactory3 }}
       MyDreamFactory4: ${{ secrets.MyDreamFactory4 }}
       MyDreamFactory5: ${{ secrets.MyDreamFactory5 }}
+      MyDreamFactory6: ${{ secrets.MyDreamFactory6 }}
       MyJdFactory1: ${{ secrets.MyJdFactory1 }}
       MyJdFactory2: ${{ secrets.MyJdFactory2 }}
       MyJdFactory3: ${{ secrets.MyJdFactory3 }}
       MyJdFactory4: ${{ secrets.MyJdFactory4 }}
       MyJdFactory5: ${{ secrets.MyJdFactory5 }}
+      MyJdFactory6: ${{ secrets.MyJdFactory6 }}
       MyJdzz1: ${{ secrets.MyJdzz1 }}
       MyJdzz2: ${{ secrets.MyJdzz2 }}
       MyJdzz3: ${{ secrets.MyJdzz3 }}
       MyJdzz4: ${{ secrets.MyJdzz4 }}
       MyJdzz5: ${{ secrets.MyJdzz5 }}
+      MyJdzz6: ${{ secrets.MyJdzz6 }}
       MyJoy1: ${{ secrets.MyJoy1 }}
       MyJoy2: ${{ secrets.MyJoy2 }}
       MyJoy3: ${{ secrets.MyJoy3 }}
       MyJoy4: ${{ secrets.MyJoy4 }}
       MyJoy5: ${{ secrets.MyJoy5 }}
+      MyJoy6: ${{ secrets.MyJoy6 }}
     steps:
       - name: "京东农场互助码1上传"
         if: env.MyFruit1
