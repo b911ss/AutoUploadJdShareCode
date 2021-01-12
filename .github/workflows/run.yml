@@ -52,6 +52,12 @@ jobs:
       MyJoy4: ${{ secrets.MyJoy4 }}
       MyJoy5: ${{ secrets.MyJoy5 }}
       MyJoy6: ${{ secrets.MyJoy6 }}
+      MyCash1: ${{ secrets.MyCash1 }}
+      MyCash2: ${{ secrets.MyCash2 }}
+      MyCash3: ${{ secrets.MyCash3 }}
+      MyCash4: ${{ secrets.MyCash4 }}
+      MyCash5: ${{ secrets.MyCash5 }}
+      MyCash6: ${{ secrets.MyCash6 }}
     steps:
       - name: "京东农场互助码1上传"
         if: env.MyFruit1
@@ -429,6 +435,60 @@ jobs:
           while (($returnCode != 400)); \
           do \
             returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/${{ env.MyJoy6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "签到领现金互助码1上传"
+        if: env.MyCash1
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcash/create/${{ env.MyCash1 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "签到领现金互助码2上传"
+        if: env.MyCash2
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcash/create/${{ env.MyCash2 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "签到领现金互助码3上传"
+        if: env.MyCash3
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcash/create/${{ env.MyCash3 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "签到领现金互助码4上传"
+        if: env.MyCash4
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcash/create/${{ env.MyCash4 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "签到领现金互助码5上传"
+        if: env.MyCash5
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcash/create/${{ env.MyCash5 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
+            echo "returnCode="$returnCode; \
+          done;
+      - name: "签到领现金互助码6上传"
+        if: env.MyCash6
+        run: |
+          returnCode=0; \
+          while (($returnCode != 400)); \
+          do \
+            returnCode=`curl https://code.chiang.fun/api/v1/jd/jdcash/create/${{ env.MyCash6 }}/ | sed 's/ //g' | grep -Po '(?<="code":)[0-9]+'`; \
             echo "returnCode="$returnCode; \
           done;
       - name: Notify To Telegram
